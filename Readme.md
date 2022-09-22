@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Ярослав Горохов](https://up.htmlacademy.ru/htmlcss/35/user/2179843).
-* Наставник: `Вадим Рахманов` (https://htmlacademy.ru/profile/id1150187).
+* Наставник: [Вадим Рахманов] (https://htmlacademy.ru/profile/id1150187).
 
 ---
 
