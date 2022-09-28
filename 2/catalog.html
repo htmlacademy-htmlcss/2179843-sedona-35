@@ -7,10 +7,10 @@
 </head>
   <body>
     <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" alt="Логотип Седоны" src="">
-        </a>
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип Седоны" src="">
+      </a>
+      <nav class="navigation"></nav>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html" >Главная</a>
@@ -41,9 +41,9 @@
         <button class="button-register-form" type="button">Хочу сюда!</button>
       </nav>
     </header>
-    <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
+    <main class="page-inner-main">
+      <nav class="page-inner-navigation">
+        <h1 class="navigation-inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
@@ -54,9 +54,9 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
+      </nav>
 
-      <section class="catalog-offers">
+      <section class="catalog-filters">
         <h2 class="visually-hidden">Список предложений с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -64,21 +64,21 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Бассейн" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="Бассейн" checked>
 
                    Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Парковка" checked>
+                  <input class="control-input" type="checkbox" name="infrastructure" value="Парковка" checked>
 
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
 
                   Wi-Fi
                 </label>
@@ -138,27 +138,27 @@
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button-view button-current">
+        <button class="button-view button-current" type="button">
           <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-view" href="#">
+        </button>
+        <button class="button-view button-current" type="button">
           <span class="visually-hidden">Показать большие карточки</span>
-        </a>
-        <a class="button-view" href="#">
+        </button>
+        <button class="button-view button-current" type="button">
           <span class="visually-hidden">Показать список</span>
-        </a>
+        </button>
         <ul class="offer-list">
           <li class="offer-card">
             <a class="offer-card-link" href="#">
               <img class="offer-card-image" src="" alt="Вида окрестностей 'Amara Resort and Spa'">
               <h3 class="offer-card-title">Amara Resort & Spa</h3>
             </a>
-            <div class="offer-card-type">Гостиница</div>
-            <b class="offer-card-price">От 4000 ₽</b>
+            <p class="offer-card-type">Гостиница</p>
+            <strong class="offer-card-price">От 4000 ₽</strong>
             <a class="offer-card-button button-details" href="#">подробнее</a>
             <button class="offer-card-button button-favourite" type="button">в избранное</button>
             <span class="visually-hidden">четыре звезды</span>
-            <a class="offer-card-button button-rating" href="#">Рейтинг: 8,5</a>
+            <p class="offer-card-rating">Рейтинг: 8,5</p>
           </li>
 
           <li class="offer-card">
@@ -166,12 +166,12 @@
               <img class="offer-card-image" src="" alt="горы рядом с 'Villas at Poco Diablo'">
               <h3 class="offer-card-title">Villas at Poco Diablo</h3>
             </a>
-            <div class="offer-card-type">Гостиница</div>
-            <b class="offer-card-price">От 5000 ₽</b>
+            <p class="offer-card-type">Гостиница</p>
+            <strong class="offer-card-price">От 5000 ₽</strong>
             <a class="offer-card-button button-details" href="#">подробнее</a>
             <button class="offer-card-button button-favourite-on" type="button">в избранном</button>
             <span class="visually-hidden">четыре звезды</span>
-            <a class="offer-card-button button-rating" href="#">Рейтинг: 9,2</a>
+            <p class="offer-card-rating">Рейтинг: 9,2</p>
           </li>
 
           <li class="offer-card">
@@ -179,12 +179,12 @@
               <img class="offer-card-image" src="" alt="гора рядом с 'Desert Quail Inn'">
               <h3 class="offer-card-title">Desert Quail Inn</h3>
             </a>
-            <div class="offer-card-type">Гостиница</div>
-            <b class="offer-card-price">От 2500 ₽</b>
+            <p class="offer-card-type">Гостиница</p>
+            <strong class="offer-card-price">От 2500 ₽</strong>
             <a class="offer-card-button button-details" href="#">подробнее</a>
             <button class="offer-card-button button-favourite" type="button">в избранное</button>
             <span class="visually-hidden">три звезды</span>
-            <a class="offer-card-button button-rating" href="#">Рейтинг: 6,9</a>
+            <p class="offer-card-rating">Рейтинг: 6,9</p>
           </li>
 
           <li class="offer-card">
@@ -192,12 +192,12 @@
               <img class="offer-card-image" src="" alt="гора на фоне звездного неба">
               <h3 class="offer-card-title">GreenTree Inn</h3>
             </a>
-            <div class="offer-card-type">Гостиница</div>
-            <b class="offer-card-price">От 1500 ₽</b>
+            <p class="offer-card-type">Гостиница</p>
+            <strong class="offer-card-price">От 1500 ₽</strong>
             <a class="offer-card-button button-details" href="#">подробнее</a>
             <button class="offer-card-button button-favourite" type="button">в избранное</button>
             <span class="visually-hidden">две звезды</span>
-            <a class="offer-card-button button-rating" href="#">Рейтинг: 5,0</a>
+            <p class="offer-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
 
@@ -236,7 +236,7 @@
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a class="footer-social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte</span>
             </a>
           </li>
@@ -260,8 +260,8 @@
 
       <section class="footer-logo">
         <h2 class="visually-hidden">Логотипа Html-academy</h2>
-        <a class="footer-logo" href="index.html">
-          <img class="page-footer-logo" alt="Логотип Html-academy" src="https://htmlacademy.ru/study">
+        <a class="footer-logo" href="https://htmlacademy.ru/study">
+          <img class="page-footer-logo" alt="Логотип Html-academy" src="">
         </a>
       </section>
     </footer>
