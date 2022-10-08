@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
   </head>
   <body>
     <header class="page-header">
@@ -12,7 +15,7 @@
       <nav class="navigation"></nav>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link-current">Главная</a>
+            <a class="navigation-link current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -34,6 +37,7 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <div class="navigation-number">12</div>
             </a>
           </li>
         </ul>
@@ -44,18 +48,20 @@
     <main class="page-main">
       <h1 class="visually-hidden">Седона</h1>
       <section class="hero">
-        <img class="hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
-        <p>Седона — небольшой городок в Аризоне,<br>
-        заслуживающий большего!</p>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="hero-images">
+          <img class="hero-welcome" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona because the Grand Canyon sucks!">
+        </div>
+        <h2 class="hero-title">Седона — небольшой городок в Аризоне,<br>
+        заслуживающий большего!</h2>
+        <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="advantages-list">
-          <li class="advantages-item">
-            <h3 class="advantages-title">Настоящий<br>
+          <li class="advantages-item with-image">
+            <h3 class="advantages-title with-image">Настоящий<br>
             Городок</h3>
-            <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantages-description with-image">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages-pic" src="images/city_view.jpg" width="800" height="384" alt="Вид на городок">
           </li>
           <li class="advantages-item">
@@ -63,21 +69,21 @@
             площадь</h3>
             <p class="advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Красивая<br>
+          <li class="advantages-item center">
+            <h3 class="advantages-title center">Красивая<br>
             дорога</h3>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="advantages-description center">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Мало<br>
             туристов</h3>
             <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item with-image">
             <img class="advantages-pic" src="images/devils_bridge.jpg" width="800" height="384" alt="Мост Дьявола">
-            <h3 class="advantages-title">Там есть<br>
+            <h3 class="advantages-title with-image">Там есть<br>
             мост дьявола</h3>
-            <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <p class="advantages-description with-image">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
         </ul>
         <ul class="advice-list">
@@ -85,9 +91,9 @@
             <h3 class="advantages-title">Жильё</h3>
             <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-item">
-            <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <li class="advantages-item food">
+            <h3 class="advantages-title food">Еда</h3>
+            <p class="advantages-description food">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages-item">
             <h3 class="advantages-title">Сувениры</h3>
@@ -99,14 +105,14 @@
 
       <section class="search_hotels">
         <h2 class="appointment-title">Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br>
+        <p class="appointment-description">Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button-appointment" type="button">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -144,7 +150,7 @@
         </section>
 
         <section class="footer-logo">
-          <h2 class="visually-hidden">Логотипа Html-academy</h2>
+          <h2 class="visually-hidden">Логотип Html-academy</h2>
           <a class="footer-logo" href="https://htmlacademy.ru/study">
             <img class="page-footer-logo" src="images/html_academy.svg" width="115" height="33" alt="Логотип Html-academy">
           </a>

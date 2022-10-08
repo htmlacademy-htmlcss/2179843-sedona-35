@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+
   </head>
   <body>
     <header class="page-header">
@@ -18,7 +21,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-current">Гостиницы</a>
+            <a class="navigation-link current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -34,6 +37,7 @@
               <span class="visually-hidden">
                 Избранное
               </span>
+              <div class="navigation-number">12</div>
             </a>
           </li>
         </ul>
@@ -41,22 +45,21 @@
       </nav>
     </header>
     <main class="page-inner-main">
-      <nav class="page-inner-navigation">
-        <h1 class="navigation-inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <span class="visually-hidden">Главная</span>
-            </a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </nav>
-
+      <h1 class="visually-hidden">Каталог</h1>
       <section class="catalog-filters">
-        <h2 class="visually-hidden">Список предложений с фильтрами</h2>
+        <h2 class="catalog-filters-title">Гостиницы Седоны</h2>
+        <nav class="page-inner-navigation">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">
+                <span class="visually-hidden">Главная</span>
+              </a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -65,7 +68,7 @@
                 <label class="control">
                   <input class="control-input" type="checkbox" name="infrastructure" value="Бассейн" checked>
 
-                   Бассейн
+                  Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
@@ -114,12 +117,12 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label>
-              <input type="text" name="min" value="0">
+            <label class="price-text">
+              <input class="price" type="text" name="min" value="0">
               от
             </label>
-            <label>
-              <input type="text" name="max" value="9000">
+            <label class="price-text">
+              <input class="price" type="text" name="max" value="9000">
               до
             </label>
             <input type="range" min="0" max="9000">
@@ -130,9 +133,10 @@
         </form>
       </section>
 
+
       <section class="search-results">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p>Найдено гостиниц: 38</p>
+        <p class="search-text">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -201,8 +205,8 @@
         </ul>
 
         <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
+          <li class="pagination-item current">
+            <a class="pagination-link current">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -213,8 +217,8 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
-            <p class="pagination-text">...</p>
+          <li class="pagination-item dots">
+            <p class="pagination-text dots">...</p>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -261,7 +265,7 @@
       </section>
 
       <section class="footer-logo">
-        <h2 class="visually-hidden">Логотипа Html-academy</h2>
+        <h2 class="visually-hidden">Логотип Html-academy</h2>
         <a class="footer-logo" href="https://htmlacademy.ru/study">
           <img class="page-footer-logo" src="images/html_academy.svg" width="115" height="33" alt="Логотип Html-academy">
         </a>
