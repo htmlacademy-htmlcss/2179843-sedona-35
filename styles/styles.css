@@ -33,7 +33,7 @@ body {
 }
 
 .button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -126,8 +126,6 @@ body {
 }
 
 .advantages-description {
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #333333;
 }
@@ -146,8 +144,6 @@ body {
 }
 
 .advantages-div-description {
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
 }
 
@@ -164,8 +160,6 @@ body {
 }
 
 .advice-description {
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   color: #333333;
 }
@@ -277,8 +271,6 @@ body {
 }
 
 .select-control {
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
 }
 
@@ -291,14 +283,10 @@ body {
 }
 
 .offer-card-type {
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
 }
 
 .offer-card-price {
-  font-size: 18px;
-  line-height: 21px;
   color: #333333;
   text-align: right;
 }
