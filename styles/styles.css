@@ -27,6 +27,10 @@ body {
   max-width: 1200px;
 }
 
+.page-header {
+  min-width: 1200px
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -129,11 +133,11 @@ body {
 }
 
 .advantages-item:not(:nth-child(2)) {
-  background: rgba(131, 179, 211, 0.12);
+  background: #F0F6FA;
 }
 
 .advantages-item:nth-child(2) {
- background: rgba(131, 179, 211, 0.2);
+ background: #E6F0F6;
 }
 
 .advantages-title {
@@ -177,7 +181,7 @@ body {
 }
 
 .advice-item:not(:nth-child(2)) {
-  background: rgba(131, 179, 211, 0.12);
+  background: #F0F6FA;
 }
 
 .advice-title {
@@ -399,16 +403,14 @@ body {
 }
 
 .page-container {
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
+  flex-grow: 1;
+  min-height: 100%;
 }
 
 html {
   height: 100%;
-}
-
-.main-container {
-  flex-grow: 1;
 }
 
 .header-container {
