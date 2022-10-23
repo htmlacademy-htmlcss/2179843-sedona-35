@@ -857,6 +857,8 @@ html {
   padding: 19px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
+  display: grid;
+  row-gap: 16px;
 }
 
 .card-price-container {
@@ -874,9 +876,12 @@ html {
 }
 
 .offer-list {
+  display: grid;
   padding: 0;
   margin: 0;
   list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .visually-hidden {
