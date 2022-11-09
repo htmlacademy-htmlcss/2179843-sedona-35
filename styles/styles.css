@@ -206,6 +206,7 @@ a.current-catalog::before {
   background: #756157;
   text-decoration: none;
   padding: 8px 26px;
+  margin-right: 2px;
 }
 
 .button-offer-card-favourite {
@@ -294,24 +295,25 @@ a.current-catalog::before {
   margin: 0;
   margin-left: 27px;
   margin-right: 27px;
-  margin-bottom: 62px;
-  position: relative;
 }
 
-.advantages-title::after {
+.advantages-description::after {
   position: absolute;
   content: "";
   height: 2px;
   width: 60px;
   background: rgba(0, 0, 0, 0.3);
-  bottom: -32px;
-  right: 59px;
+  top: 30%;
+  right: 50%;
+  transform: translate(50%, -85%);
 }
 
 .advantages-description {
   text-align: center;
+  position: relative;
   color: #333333;
   margin: 0;
+  padding-top: 62px;
 }
 
 .advantages-div {
@@ -328,7 +330,6 @@ a.current-catalog::before {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 62px;
 }
 
 .advantages-div-description::after {
@@ -337,15 +338,17 @@ a.current-catalog::before {
   height: 2px;
   width: 60px;
   background: rgba(255, 255, 255, 0.3);
-  top: -51%;
-  left: 36%;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .advantages-div-description {
-  position: relative;
   display: block;
   text-align: center;
   margin: 0;
+  padding-top: 62px;
+  position: relative;
 }
 
 .advice-item:not(:nth-child(2)) {
@@ -553,12 +556,14 @@ a.current-catalog::before {
 
 .catalog-filter-item {
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
+  padding-left: 29px;
   line-height: 23px;
+  display: flex;
 }
 
 .catalog-filter-item:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 
@@ -1065,64 +1070,68 @@ html {
 
 .control {
   cursor: pointer;
-  position: relative;
   display: block;
 }
 
-.control-mark {
-  position: absolute;
-  top: 2px;
-  left: 1px;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border-radius: 4px;
+.control-input {
+  position: relative;
+  -webkit-appearance: none;
+          appearance: none;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark {
+.control-input-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -23px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.control-input-checkbox:checked::after {
   background-image: url("../images/tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.control-label {
-  padding-left: 36px;
-}
-
-.control:hover {
-  opacity: 0.6;
-}
-
-.square:focus {
-  outline: none;
-  border: 3px solid #83b3d3;
-  width: 14px;
-  height: 14px;
-}
-
-.control:active {
-  opacity: 0.3;
-}
-
-.control-input:disabled + .control-mark {
-  border-color: #242424;
-}
-
-.control-input[type="radio"] + .control-mark {
+.control-input-radio::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  transform: translate(-165%, -50%);
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
-.control-input[type="radio"]:checked + .control-mark {
+.control-input-radio:checked::after {
   background-image: url("../images/circle_form.svg");
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
-.circle:focus {
+.catalog-filter-item:hover {
+  opacity: 0.6;
+}
+
+.control-input:focus {
+  outline: none;
+}
+
+.control-input:focus::after {
   outline: none;
   border: 3px solid #83b3d3;
-  width: 14px;
-  height: 14px;
+  box-sizing: border-box;
+}
+
+.catalog-filter-item:active {
+  opacity: 0.3;
 }
 
 .infrastructure-container {
@@ -1206,7 +1215,7 @@ html {
   color: #333333;
   font-family: inherit;
   margin-right: 70px;
-  padding: 14px 20px;
+  padding: 10px 18px;
   line-height: 21px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
@@ -1216,7 +1225,7 @@ html {
   box-sizing: border-box;
   background-image: url("../images/arrow_down.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   -webkit-appearance: none;
           appearance: none;
 }
