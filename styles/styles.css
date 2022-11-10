@@ -136,9 +136,8 @@ a.current-catalog::before {
 }
 
 .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   text-align: center;
@@ -200,7 +199,6 @@ a.current-catalog::before {
 }
 
 .button-offer-card-details {
-  display: block;
   font-size: 16px;
   line-height: 20px;
   background: #756157;
@@ -482,7 +480,7 @@ a.current-catalog::before {
 .catalog-filters {
   background-image: url("../images/background_blured_catalog.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #7faacc;
   padding-top: 35px;
   padding-bottom: 70px;
@@ -581,6 +579,7 @@ a.current-catalog::before {
   padding-left: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
+  -moz-appearance: textfield;
 }
 
 .price::-webkit-outer-spin-button,
@@ -964,7 +963,7 @@ html {
   background-image: url("../images/background_blured_index.jpg");
   background-color: #497daa;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .newsletter-form {
@@ -1544,19 +1543,12 @@ html {
 }
 
 .modal-input:focus {
-  outline: none;
   background: #e6e6e6;
-  border: 3px solid #83b3d3;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  width: 414px;
+  outline: 3px solid #83b3d3;
 }
 
 .modal-input:active {
-  border: 2px solid #000000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 416px;
+  outline: 2px solid #000000;
 }
 
 .form-input-container {
@@ -1577,6 +1569,7 @@ html {
   line-height: 20px;
   text-align: center;
   font-family: inherit;
+  -moz-appearance: textfield;
 }
 
 .form-input::placeholder {
